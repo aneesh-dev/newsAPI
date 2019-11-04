@@ -1,0 +1,7 @@
+npm init -y
+npm i nodemon -g --save
+1. mongoose
+2. express
+3. nodemon
+4. body-parser
+5. cors
