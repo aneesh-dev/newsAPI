@@ -31,7 +31,7 @@ newsRoute.route("/addnews").post(function(req, res) {
 //get single news info using ref id
 newsRoute.route("/getone/:id").get(function(req, res) {
   let id = req.params.id;
-  NewsModel.findById({ _id: id }, function(err, data) {
+  NewsModel.findByIdAndDelete({ _id: id }, function(err, data) {
     res.json(data);
   });
 });
